@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Bebas Neue', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #fafcfc;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #7eb4c4;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #033342;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="Home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+                <a id="PARA" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> PARA</a>
+		<a id="Review" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Review</a>
+                <a id="Finance" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-money-bill-1"></i> Finance</a>
+                <a id="Health" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart-pulse"></i> Health</a>
+                <a id="Journal& Habit" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen-nib"></i> Journal& Habit</a>
+                <a id="Social Media" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-square-instagram"></i> Social Media</a>
+                <a id="Aromatherapy" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-hand-holding-droplet"></i> Aromatherapy</a>
+                <a id="Astrology" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star"></i> Astrology</a>
+                <a id="Reading" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Reading</a>
+                <a id="Movie& Drama" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-masks-theater"></i> Movie& Drama</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Home')
+				window.open("https://www.notion.so/New-Life-Hub-90ce1db4e7a94a8689bb6d1e0c3eeb02", '_blank').focus();
+                   else if (id == 'PARA')
+				window.open("https://www.notion.so/PARA-Dashboard-07ae9bb6c31044c6bfd6f982102e8fdf", '_blank').focus();
+                   else if (id == 'Review')
+				window.open("https://www.notion.so/Weekly-Review-ca366170f6464fceb72533c07b1cc661", '_blank').focus();
+                   else if (id == 'Finance')
+				window.open("https://www.notion.so/Finance-Tracker-9f475fa78622468180dece0f7e45472f", '_blank').focus();
+                   else if (id == 'Health')
+				window.open("https://www.notion.so/Health-Tracker-954ca4ffe15a4d778f607045c3b5c829", '_blank').focus();
+                   else if (id == 'Journal& Habit')
+				window.open("https://www.notion.so/Journal-Habit-Tracker-4d9fbe2230754b4ca44cb5dd482eef24", '_blank').focus();
+                   else if (id == 'Social Media')
+				window.open("https://www.notion.so/Social-Media-Content-Dashboard-b03eb3b8b95644759aaab16eb6d918c8", '_blank').focus();
+                   else if (id == 'Aromatherapy')
+				window.open("https://www.notion.so/Aromatherapy-8b36448491d64409a1673b856da6b7a8", '_blank').focus();
+                   else if (id == 'Astrology')
+				window.open("https://www.notion.so/Astrology-3a226e6257f54b6fbed3c30ff6983e80", '_blank').focus();
+                   else if (id == 'Reading')
+				window.open("https://www.notion.so/Readings-5f4a4a6cc337428ba3bcd100c0bbc4f2", '_blank').focus();
+                   else if (id == 'Movie& Drama')
+				window.open("https://www.notion.so/Movie-Drama-46028913d73d4086b020b84083a4a82f", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
